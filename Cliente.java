@@ -4,7 +4,7 @@ public class Cliente {
     private String nome;
     private String email;
 
-    public Cliente(int id, String nome, String email){
+    public Cliente(String nome, String email){
         this.id = idProgressivo;
         this.nome = nome;
         this.email = email;
@@ -33,6 +33,6 @@ public class Cliente {
 
     @Override
     public String toString(){
-        return "Cliente numero " + this.id + ":\nNome: " + this.nome + "\nEmail: " + this.email;
+        return "Cliente numero: " + this.id + "\nNome: " + this.nome + "\nEmail: " + this.email;
     }
 }
